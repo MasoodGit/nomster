@@ -32,8 +32,13 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+# include kaminari
+gem 'kaminari'
+
 # include bootstrap
 gem 'bootstrap-sass', '~> 3.3.4'
+
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
