@@ -40,9 +40,17 @@ gem 'bootstrap-sass', '3.3.5.1'
 
 gem 'sprockets', '2.11.0'
 
+# include simple_form for form generation
 gem 'simple_form'
 
+# include devise for authentication
 gem 'devise', '>= 3.2.4'
+
+# include geocoder to fetch lat and lng for any place
+gem 'geocoder'
+
+# include figaro to save config details in ENV rather than in git config files
+gem 'figaro', '>= 1.0.0'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
