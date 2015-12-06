@@ -52,6 +52,9 @@ gem 'geocoder'
 # include figaro to save config details in ENV rather than in git config files
 gem 'figaro', '>= 1.0.0'
 
+# include carrierwave for image upload
+gem 'carrierwave'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 

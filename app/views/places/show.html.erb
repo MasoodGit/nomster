@@ -82,5 +82,15 @@
       </blockquote>
     </div>
   <% end %>
+
+  <div class="clear"></div>
+  <h1>Photo</h1>
+  <%= simple_form_for @photo , :url => place_photos_path(@place) do |f| %>
+    <%= f.input :caption %>
+    <%= f.input :picture %>
+    <%= f.submit "Add a photo", :class => 'btn btn-primary' %>
+  <% end %>
+
+
 </div>
 

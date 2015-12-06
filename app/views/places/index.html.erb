@@ -21,6 +21,15 @@
         </blockquote>
       </div>
     <% end %>
+    <% if place.photos.present? %>
+    <div class="col-xs-12">
+      <% place.photos.each do |photo| %>
+        <%= image_tag photo.picture %>
+        <%= photo.caption %>
+      <% end %>
+    </div>
+    <%end%>
+
     </div>
   <% end %>
 </div>
