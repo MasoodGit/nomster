@@ -1,7 +1,5 @@
 <div class="container">
-  <div class="col-xs-12">
-    <%= paginate @places %>
-  </div>
+
   <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
@@ -9,32 +7,39 @@
       <li data-target="#carousel-example-generic" data-slide-to="1"></li>
       <li data-target="#carousel-example-generic" data-slide-to="2"></li>
       <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="4"></li>
     </ol>
 
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
       <div class="item active">
-      <%= image_tag 'slider1.jpeg' %>
+      <%= image_tag 'slider1_modified.jpg' , :class => 'img-responsive' %>
         <div class="carousel-caption">
-          Find the best pizza places
+          Early morning in the game reserve
         </div>
       </div>
     <div class="item">
-    <%= image_tag 'slider2.jpeg' %>
+    <%= image_tag 'slider2_modified.jpg' , :class => 'img-responsive' %>
       <div class="carousel-caption">
-        Find the best pizza places
+        Awesome 
       </div>
     </div>
     <div class="item">
-    <%= image_tag 'slider3.jpeg' %>
+    <%= image_tag 'slider3_modified.jpg' , :class => 'img-responsive' %>
       <div class="carousel-caption">
-        Find the best pizza places
+        Life in the mountains
       </div>
     </div>
     <div class="item">
-    <%= image_tag 'slider4.jpeg' %>
+    <%= image_tag 'slider4_modified.jpg' , :class => 'img-responsive' %>
       <div class="carousel-caption">
-        Find the best pizza places
+        Icy peaks
+      </div>
+    </div>
+    <div class="item">
+    <%= image_tag 'slider5_modified.jpg' , :class => 'img-responsive' %>
+      <div class="carousel-caption">
+        Is this dusk 
       </div>
     </div>
     </div>
@@ -77,4 +82,7 @@
 
     </div>
   <% end %>
+  <div class="col-xs-12">
+    <%= paginate @places %>
+  </div>
 </div>
