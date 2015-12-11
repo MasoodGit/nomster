@@ -1,11 +1,18 @@
-<div class="booyah-box col-xs-10 col-xs-offset-2">
-  <h1>Edit your place Details</h1>
-  <%= simple_form_for @place do |f| %>
-    <%= f.input :name %>
-    <%= f.input :address %>
-    <%= f.input :description %>
-    <br/>
-    <%= f.submit 'Update', :class => 'btn btn-primary'%>
-    <%= link_to 'Cancel', place_path(@place) , :class => "btn btn-default" %>
-  <% end %>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-8 col-xs-offset-2">
+      <div class="booyah-box">
+        <h1>Edit your place Details</h1>
+        <br/>
+        <%= simple_form_for @place do |f| %>
+        <%= f.input :name  %>
+        <%= f.input :address %>
+        <%= f.input :description %>
+        <br/>
+        <%= f.submit 'Update', :class => 'btn btn-primary'%>
+        <%= link_to 'Cancel', place_path(@place) , :class => "btn btn-default" %>
+        <% end %>
+      </div>
+    </div>
+  </div>
 </div>
