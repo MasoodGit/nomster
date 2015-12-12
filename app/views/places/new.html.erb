@@ -4,7 +4,7 @@
       <div class="booyah-box">
         <h1>Enter your place Details</h1>
         <%= simple_form_for @place do |f| %>
-        <%= f.input :name %>
+        <%= f.input :name , :class => 'form-group' %>
         <%= f.input :address %>
         <%= f.input :description %>
         <br/>
