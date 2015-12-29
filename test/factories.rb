@@ -16,7 +16,7 @@ FactoryGirl.define do
 
   factory :comment do
     message "Bangalore's awesome place to eat"
-    rating "three stars"
+    rating "2_stars"
 
     association :user
     association :place
